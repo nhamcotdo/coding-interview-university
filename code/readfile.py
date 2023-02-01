@@ -1,0 +1,11 @@
+fp = open("readfile.txt","a+")
+#print(fp.read())
+#print(fp.read(29))
+#print(fp.readlines())
+#print(fp.readline())
+#print(fp.tell())
+#print(fp.tell())
+fp.write(", anh yêu em")
+print(fp.seek(3))
+for line in fp:
+	print(line)

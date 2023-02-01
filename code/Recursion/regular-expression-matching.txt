@@ -1,0 +1,12 @@
+constraint:
+    . => any single character
+    * => zero or more of preceding element ('*' is invalid)
+    
+    'aa' == 'a*' true
+    'aa' == 'a' false
+    'ab' == '.*' true
+    
+solution
+    check head and tail
+        'abcaddasd' == 'a.*asd'
+    
